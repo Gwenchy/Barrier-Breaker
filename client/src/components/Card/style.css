@@ -1,0 +1,21 @@
+.hColor {
+    background: linear-gradient(to right, #552A7F 20%, #663399 100%);
+}
+
+.dSize {
+    margin: 5vh 2vw;
+}
+
+.cSize {
+    border: none
+}
+.divSize {
+    height: 35vh;
+    padding: 30px 10px;
+}
+
+.h2Color {
+    background: #BB99CD;
+    border: hidden;
+    height: 50%;
+}

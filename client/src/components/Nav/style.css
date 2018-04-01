@@ -1,0 +1,9 @@
+.navColor {
+    background: linear-gradient(to right, #552A7F 20%, #663399 100%);
+}
+
+.linkColor {
+    color: white;
+    padding-right: 10vw;
+    margin-right: 5vw;
+}
