@@ -5,8 +5,8 @@ import axios from 'axios';
 
 
 import SignUp from "./components/SignUp";
-import Home from "./components/Home";
-import Main from "./components/Main";
+import Home from "./pages/Home";
+import Main from "./pages/Main";
 import Videos from "./pages/Videos";
 import Chat from "./pages/Chat";
 import Quiz from "./pages/Quiz";
