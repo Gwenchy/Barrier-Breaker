@@ -3,7 +3,25 @@
 }
 
 .linkColor {
-    color: white;
-    padding-right: 10vw;
-    margin-right: 5vw;
+    padding: 0;
+    margin: 0vh 5vw;
+}
+
+.bar:hover {
+    color: red;
+}
+
+.bar::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 500ms;
+}
+
+.bar:hover::before {
+    width: 5vw
 }

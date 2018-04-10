@@ -4,6 +4,7 @@ module.exports = function (passport) {
 
 	const db = require("../models");
 	const QuizQuestion = db.QuizQuestion;
+	const VideosId = db.VideosId;
 
 
 	//add any API routes here
@@ -18,6 +19,19 @@ module.exports = function (passport) {
 	router.get("/getQuestions", function(req,res){
 		QuizQuestion.find().then( function(foundQuestions){
 			res.json(foundQuestions);
+		});
+	});
+
+	router.post("/getVideosId", function(req,res){
+		VideosId.create(req.body).then(function(newVideosId){
+			console.log(newVideosId);
+			res.json(newVideosId);
+		});
+	});
+
+	router.get("/getVideosId", function(req,res){
+		VideosId.find().then( function(foundVideosId){
+			res.json(foundVideosId);
 		});
 	});
 

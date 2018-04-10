@@ -24,6 +24,12 @@ export default class Example extends React.Component {
     });
   }
   render() {
+    const { location } = this.props;
+    const homeClass = location.pathname === "/" ? "active" : "";
+    const quizClass = location.pathname.match(/^\/quiz/) ? "active" : "";
+    const videosClass = location.pathname.match(/^\/videos/) ? "active" : "";
+    const chatClass = location.pathname.match(/^\/chat/) ? "active" : "";
+
     return (
       <div>
         <Navbar className="navColor" dark expand="sm">
@@ -32,16 +38,16 @@ export default class Example extends React.Component {
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav navbar>
-              <NavItem className="linkColor">
+              <NavItem className="linkColor" class={homeClass}>
                 <Link className="nav-link bar" to="/home">Home</Link>
               </NavItem>
-              <NavItem className="linkColor">
+              <NavItem className="linkColor" class={quizClass}>
                 <Link className="nav-link bar" to="/quiz">Quiz</Link>
               </NavItem>
-			      <NavItem className="linkColor">
+			      <NavItem className="linkColor" class={videosClass}>
                 <Link className="nav-link bar" to="/videos">Videos</Link>
               </NavItem>
-			      <NavItem className="linkColor">
+			      <NavItem className="linkColor" class={chatClass}>
                 <Link className="nav-link bar" to="/chat">Chat</Link>
               </NavItem>
             </Nav>
