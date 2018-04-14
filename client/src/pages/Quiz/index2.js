@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import "./style.css";
 import Nav from "../../components/Nav";
 import Dropdown from "../../components/Dropdown";
-import Questions from '../../components/Questions';
 
 // gather other componets
 //import otherComponent from "../otherComponent";
@@ -56,13 +55,13 @@ class Quiz extends Component {
 
 	handleChange = (event) => {
 		event.preventDefault();
-		console.log(event.target.value);
 		this.setState({
 			loadedQuestions: this.state[event.target.value]
 		})
 	}
 	
 	render () {
+
 		return(
 			<div>
 				<Nav
@@ -77,11 +76,12 @@ class Quiz extends Component {
 					/>
 					<div className = "text-center">
 						{this.state.loadedQuestions.map((question) => {
-							return (
-								<Questions
-								key={question}
-								questionAsked= {question.question} />
-							)
+						return (
+							<div className = "container">
+								<h2>{question.questions}</h2>
+								<h3>{question.answers}</h3>
+							</div>
+						)
 						})}
 					</div>
 				</div>

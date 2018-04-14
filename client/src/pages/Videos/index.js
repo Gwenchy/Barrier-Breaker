@@ -17,14 +17,13 @@ class Videos extends Component {
         loadedVideos: []
     }
 
-        handleChange = (event) => {
-            event.preventDefault();
-            // console.log("hoello")
-            console.log(event.target.value);
-            this.setState({
-                loadedVideos: this.state[event.target.value]
-            });
-        }
+    handleChange = (event) => {
+        event.preventDefault();
+        console.log(event.target.value);
+        this.setState({
+            loadedVideos: this.state[event.target.value]
+        });
+    }
 
     render () {
         return (
@@ -45,7 +44,7 @@ class Videos extends Component {
               {this.state.loadedVideos.map((videoId) => {
                 return (
                     <LangVid
-                        videoId={videoId} 
+                        videoId = {videoId} 
                         key = {videoId}
                     />
                 )
@@ -53,6 +52,7 @@ class Videos extends Component {
             </div>
             </div>
         );
-    } }
+    } 
+}
 
 export default Videos;

@@ -8,7 +8,7 @@ import SignUp from "./components/SignUp";
 import Home from "./pages/Home";
 import Main from "./pages/Main";
 import Videos from "./pages/Videos";
-import Chat from "./pages/Chat";
+import Contact from "./pages/Contact";
 import Quiz from "./pages/Quiz";
 
 class App extends Component {
@@ -128,11 +128,11 @@ class App extends Component {
           } 
         }
         }/>
-        <Route exact path = "/chat" render = {()=> {
+        <Route exact path = "/Contact" render = {()=> {
           if(!loggedIn){
             return <Redirect to = "/" />
           } else {
-            return <Chat handleLogout = {this.handleLogout} auth = { this.state.auth }/>
+            return <Contact handleLogout = {this.handleLogout} auth = { this.state.auth }/>
           } 
         }
         }/>

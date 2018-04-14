@@ -4,7 +4,7 @@
 
 .linkColor {
     padding: 0;
-    margin: 0vh 5vw;
+    margin: 0vh 5vw
 }
 
 .bar:hover {
@@ -16,12 +16,12 @@
     display: block;
     height: 5px;
     background-color: white;
-    position: absolute;
+    position: relative;
     top: 0;
     width: 0%;
-    transition: all ease-in-out 500ms;
+    transition: all ease-in-out 300ms;
 }
 
 .bar:hover::before {
-    width: 5vw
+    width: 100%
 }

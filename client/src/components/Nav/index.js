@@ -32,17 +32,17 @@ export default class Example extends React.Component {
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav navbar>
-              <NavItem className="linkColor">
-                <Link className="nav-link bar" to="/home">Home</Link>
+              <NavItem className="linkColor bar">
+                <Link className="nav-link" to="/home">Home</Link>
               </NavItem>
-              <NavItem className="linkColor">
-                <Link className="nav-link bar" to="/quiz">Quiz</Link>
+              <NavItem className="linkColor bar">
+                <Link className="nav-link" to="/quiz">Quiz</Link>
               </NavItem>
-			      <NavItem className="linkColor">
-                <Link className="nav-link bar" to="/videos">Videos</Link>
+			      <NavItem className="linkColor bar">
+                <Link className="nav-link" to="/videos">Videos</Link>
               </NavItem>
-			      <NavItem className="linkColor">
-                <Link className="nav-link bar" to="/chat">Chat</Link>
+			      <NavItem className="linkColor bar">
+                <Link className="nav-link" to="/contact">Contact</Link>
               </NavItem>
             </Nav>
           </Collapse>
