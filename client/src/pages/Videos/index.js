@@ -41,7 +41,7 @@ class Videos extends Component {
 			/>
 			</div>
             <div className = "text-center">
-              {this.state.loadedVideos.map((videoId) => {
+              {this.state.loadedVideos && this.state.loadedVideos.map((videoId) => {
                 return (
                     <LangVid
                         videoId = {videoId} 

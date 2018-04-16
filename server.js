@@ -7,6 +7,9 @@ const models = require("./models");
 const passport = require("passport");
 const session = require('express-session');
 
+const socket = require('socket.io');
+
+
 // Configure body parser for AJAX requests
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
@@ -31,6 +34,13 @@ mongoose.Promise = global.Promise;
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/BarrierBreaker"
 );
+
+// Socket.IO server
+io = socket(app.server);
+
+io.on('connection', (socket) => {
+    console.log(socket.id);
+});
 
 // Start the API server
 app.listen(PORT, function() {

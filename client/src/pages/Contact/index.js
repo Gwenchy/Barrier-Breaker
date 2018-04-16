@@ -1,7 +1,6 @@
 import React from 'react';
 import "./style.css";
 import Nav from "../../components/Nav"
-import ChatBox from "../../components/ChatBox"
 
 // gather other componets
 //import otherComponent from "../otherComponent";
@@ -40,7 +39,7 @@ const Contact = (props) => {
 					</div>
 				</div>
 				<div className = "row">
-					<ChatBox/>
+
 				</div>
 			</div>
 		</div>
