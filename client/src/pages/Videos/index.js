@@ -10,7 +10,6 @@ import LangVid from '../../components/LangVid';
 class Videos extends Component {
 
     state = {
-        englishIds: [],
         spanishIds: ["QWEXFfqwh7w", "V8g3k5bICD0", "f4bHvdgTvos", "kkvp_Ec2liI", "3wIIRnv-qSk", "k-95HRUGEoo", "r1a4RCq4yKA", "ikojlvoF9rc", "iDATBj4jrG4", "5Xt65qLeq3I"],
         chineseIds: ["ApYHahBeBTQ","BizuZh0DWCk","UZeFTVJNIg4"],
         frenchIds:  ["I1dHsk1aRyE","6uhkUy1I4FM","iDSqpPeFCBg"],//https://www.youtube.com/watch?v=iDSqpPeFCBg&index=3&list=PLZNV0gmRjgU-fr4h3cEe96Yy75HKqh_KH

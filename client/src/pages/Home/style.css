@@ -3,6 +3,7 @@
 }
 
 .colSize {
-    width: 22vw;
-    height: 22vh;
+    width: 320px;
+    height: 250px;
+    margin: 20px
 }

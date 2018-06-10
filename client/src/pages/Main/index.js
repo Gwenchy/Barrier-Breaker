@@ -18,26 +18,26 @@ const Main = (props) => {
 			/>
 			<div className="container-fluid">
 				<div className="row">
-					<div className="col">
-					<Card
-					cardHeader={<h2>Learn New Language</h2>}
-					cardTitle="Few courses that will help you harness your skills"
-					cardText="But you got to put the effort ar the time"
-					/>
+					<div className="col-md">
+						<Card
+						cardHeader={<h2>Learn New Language</h2>}
+						cardTitle="Few courses that will help you harness your skills"
+						cardText="But you got to put the effort ar the time"
+						/>
 					</div>
-					<div className="col">
-					<Card
-					cardHeader={<h2>Conect With People</h2>}
-					cardTitle="With chatrooms you can talk to others around the world"
-					cardText="And you dont have to know their language"
-					/>
+					<div className="col-md">
+						<Card
+						cardHeader={<h2>Conect With People</h2>}
+						cardTitle="With chatrooms you can talk to others around the world"
+						cardText="And you dont have to know their language"
+						/>
 					</div>
-					<div className="col">
-					<Card
-					cardHeader={<h2>Know The World</h2>}
-					cardTitle="By communicating you will learn about other cultures"
-					cardText="Maybe find a person to travle with"
-					/>
+					<div className="col-md">
+						<Card
+						cardHeader={<h2>Know The World</h2>}
+						cardTitle="By communicating you will learn about other cultures"
+						cardText="Maybe find a person to travle with"
+						/>
 					</div>
 				</div>
 			</div>

@@ -5,9 +5,6 @@ export default (props)=>{
     return (
       <select className="custom-select" onChange={props.handleChange} >
         <option defaultValue>Select your Language</option>
-        <option value={"englishIds"}>
-          English
-        </option>
         <option value={"spanishIds"}>
           Spanish
         </option>
